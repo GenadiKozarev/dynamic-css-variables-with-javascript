@@ -1,0 +1,39 @@
+:root {
+    --base: #62ba46;
+    --spacing: 15px;
+    --blur: 1px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    flex-shrink: 1;
+}
+
+.highlight {
+    color: var(--base);
+}
+
+body {
+    text-align: center;
+    background: #000000;
+    color: #fff;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.controls {
+    margin-bottom: 50px;
+}
+
+input {
+    width: 100px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>Dynamic CSS variables with JS</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="./script.js"></script>
     </head>
     <body>
         <h2>Dynamic CSS variables with <span class="highlight">JS</span></h2>
@@ -12,27 +14,24 @@
                 id="spacing"
                 type="range"
                 name="spacing"
-                min="10"
-                max="200"
-                value="10"
+                min="5"
+                max="50"
+                value="15"
                 data-sizing="px"
             />
-
             <label for="for">Blur:</label>
             <input
                 id="blur"
                 type="range"
                 name="blur"
                 min="0"
-                max="25"
-                value="10"
+                max="15"
+                value="1"
                 data-sizing="px"
             />
-
             <label for="base">Base Color:</label>
             <input id="base" type="color" name="base" value="#62ba46" />
         </div>
-
         <div class="image-container">
             <img
                 src="./wallpaper.jpg"
@@ -40,47 +39,5 @@
                 width="66%"
             />
         </div>
-
-        <style>
-            :root {
-                --base: #62ba46;
-                --spacing: 10px;
-                --blur: 10px;
-            }
-
-            img {
-                padding: var(--spacing);
-                background: var(--base);
-                filter: blur(var(--blur));
-                flex-shrink: 1;
-            }
-
-            .highlight {
-                color: var(--base);
-            }
-
-            body {
-                text-align: center;
-                background: #000000;
-                color: #fff;
-                font-family: 'helvetica neue', sans-serif;
-                font-weight: 100;
-                font-size: 25px;
-            }
-
-            .controls {
-                margin-bottom: 50px;
-            }
-
-            input {
-                width: 100px;
-            }
-
-            .image-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        </style>
     </body>
 </html>
