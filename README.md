@@ -5,10 +5,12 @@
 Live: 
 
 Preview: 
+<img width="1512" alt="dynamic_css_variables with_JS" src="https://github.com/user-attachments/assets/eb52dd63-197d-4d64-97c9-5a47b4916c6b">
 
+Keywords:
 - dataset (data-NAME)
-- <input type="range">
-- <input type="color">
+- input type="range"
+- input type="color"
 - :root {}
 - var(--NAME)
 - event type 'input'
